@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Adapters\" />
+      <Folder Include="Features\Greeting\Dtos\" />
+      <Folder Include="Features\Greeting\Endpoints\" />
+      <Folder Include="Features\Greeting\Events\" />
+      <Folder Include="Features\Greeting\Mapper\" />
+      <Folder Include="Features\Greeting\Ports\" />
+      <Folder Include="Features\Greeting\Queries\" />
+      <Folder Include="Features\Greeting\Validators\" />
+      <Folder Include="Shared\" />
+    </ItemGroup>
+
+</Project>
