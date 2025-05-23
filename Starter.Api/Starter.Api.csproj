@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
+        <PackageReference Include="Scalar.AspNetCore" Version="2.4.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -20,7 +21,6 @@
     <ItemGroup>
       <Folder Include="Adapters\" />
       <Folder Include="Features\Greeting\Dtos\" />
-      <Folder Include="Features\Greeting\Endpoints\" />
       <Folder Include="Features\Greeting\Events\" />
       <Folder Include="Features\Greeting\Mapper\" />
       <Folder Include="Features\Greeting\Ports\" />
