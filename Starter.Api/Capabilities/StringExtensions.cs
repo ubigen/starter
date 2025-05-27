@@ -1,4 +1,4 @@
-namespace Starter.Api.Extensions;
+namespace Starter.Api.Capabilities;
 
 public static class StringExtensions
 {

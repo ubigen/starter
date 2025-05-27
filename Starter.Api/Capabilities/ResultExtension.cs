@@ -1,6 +1,6 @@
 using Starter.Api.Shared.Results;
 
-namespace Starter.Api.Extensions;
+namespace Starter.Api.Capabilities;
 
 public static class ResultExtension
 {

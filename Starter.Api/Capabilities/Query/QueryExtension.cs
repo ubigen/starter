@@ -1,13 +1,11 @@
 using System.Reflection;
 
-namespace Starter.Api.Extensions.Query;
+namespace Starter.Api.Capabilities.Query;
 
 public static class QueryExtension
 {
-    public static IServiceCollection AddQuery(this IServiceCollection services)
+    public static IServiceCollection AddQuery(this IServiceCollection services, Assembly assembly)
     {
-        var assembly = Assembly.GetExecutingAssembly();
-
         var handlerTypes = assembly
             .DefinedTypes
             .Where(type => type.IsClass 

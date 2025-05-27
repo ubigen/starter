@@ -1,6 +1,6 @@
 using Starter.Api.Shared.Results;
 
-namespace Starter.Api.Extensions.Command;
+namespace Starter.Api.Capabilities.Command;
 
 public interface ICommand<in TCommand, TResponse>
 {

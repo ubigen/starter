@@ -4,7 +4,7 @@ namespace Starter.Api.Features.Greeting.Domain;
 
 internal sealed class GreetingMessage : Entity, IAggregateRoot
 {
-    public string Text { get; }
+    private string Text { get; }
 
     private GreetingMessage(string text)
     {

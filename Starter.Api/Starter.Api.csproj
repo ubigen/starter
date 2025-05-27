@@ -19,13 +19,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Adapters\" />
+      <Folder Include="Adapters\Observability\" />
+      <Folder Include="Features\Greeting\Behaviors\" />
       <Folder Include="Features\Greeting\Dtos\" />
       <Folder Include="Features\Greeting\Events\" />
       <Folder Include="Features\Greeting\Mapper\" />
       <Folder Include="Features\Greeting\Ports\" />
       <Folder Include="Features\Greeting\Queries\" />
-      <Folder Include="Features\Greeting\Validators\" />
+      <Folder Include="Features\Greeting\Tests\" />
       <Folder Include="Shared\" />
     </ItemGroup>
 

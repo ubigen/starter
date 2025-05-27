@@ -1,6 +1,6 @@
 
 
-namespace Starter.Api.Extensions.Endpoint;
+namespace Starter.Api.Capabilities.Endpoint;
 
 public interface IEndpoint
 { 

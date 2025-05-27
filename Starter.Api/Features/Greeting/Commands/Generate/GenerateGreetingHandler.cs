@@ -1,4 +1,4 @@
-using Starter.Api.Extensions.Command;
+using Starter.Api.Capabilities.Command;
 using Starter.Api.Features.Greeting.Domain;
 using Starter.Api.Shared.Results;
 

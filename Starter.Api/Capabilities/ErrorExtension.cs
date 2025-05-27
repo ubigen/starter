@@ -1,6 +1,6 @@
 using Starter.Api.Shared.Errors;
 
-namespace Starter.Api.Extensions;
+namespace Starter.Api.Capabilities;
 
 public static class ErrorExtension
 {

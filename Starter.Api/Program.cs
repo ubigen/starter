@@ -1,8 +1,7 @@
 using Scalar.AspNetCore;
-using Starter.Api.Extensions.Command;
-using Starter.Api.Extensions.Endpoint;
-using Starter.Api.Extensions.Query;
-using Starter.Api.Extensions.Validator;
+using Starter.Api.Capabilities.Feature;
+using Starter.Api.Capabilities.Pipeline;
+using Starter.Api.Features.Greeting;
 using Starter.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,12 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services
     .AddOpenApi()
-    .AddValidators()
-    .AddCommand()
-    .AddQuery()
-    .AddEndpoints()
-    .AddExceptionHandler<ExceptionHandler>();
-
+    .AddPipelineBehaviors()
+    .AddExceptionHandler<ExceptionHandler>()
+    .AddFeature<GreetingFeature>();
 
 var app = builder.Build();
 
@@ -29,6 +25,6 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
-app.MapEndpoints();
+app.UseFeature<GreetingFeature>();
 app.UseHttpsRedirection();
 app.Run();

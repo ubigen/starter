@@ -1,6 +1,6 @@
 using Starter.Api.Shared.Validation;
 
-namespace Starter.Api.Extensions.Validator;
+namespace Starter.Api.Capabilities.Validator;
 
 public interface IValidator<in T> where T : class
 {

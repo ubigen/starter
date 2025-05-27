@@ -1,6 +1,6 @@
 using Starter.Api.Shared.Results;
 
-namespace Starter.Api.Extensions.Query;
+namespace Starter.Api.Capabilities.Query;
 
 public interface IQuery<in TRequest, TResponse>
 {
